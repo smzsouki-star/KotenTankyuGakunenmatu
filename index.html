@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古典テスト対策クイズ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Shippori+Mincho:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>古典テスト対策クイズ</h1>
+        </header>
+
+        <!-- Main Menu -->
+        <main id="menu-screen" class="screen">
+            <section class="selection">
+                <h2>作品を選択してください</h2>
+                <div id="work-list" class="grid-container">
+                    <!-- Works will be injected here -->
+                </div>
+            </section>
+
+            <section id="part-selection" class="selection hidden">
+                <h2 id="selected-work-title">パートを選択してください</h2>
+                <div id="part-list" class="grid-container">
+                    <!-- Parts will be injected here -->
+                </div>
+                <button id="back-to-works" class="secondary-btn">作品選択に戻る</button>
+            </section>
+        </main>
+
+        <!-- Quiz Screen -->
+        <main id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <span id="quiz-part-title">パート名</span>
+                <div class="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <span id="question-number">1 / 10</span>
+                <button id="quiz-back-btn" class="secondary-btn small">戻る</button>
+            </div>
+
+            <div class="question-container">
+                <p id="question-text">ここに問題が表示されます</p>
+            </div>
+
+            <div id="options-container" class="options-grid">
+                <!-- Options will be injected here -->
+            </div>
+
+            <div id="feedback-container" class="feedback-area hidden">
+                <div id="answer-result">正解！</div>
+                <div id="explanation-text">解説がここに表示されます。</div>
+                <button id="next-btn" class="primary-btn">次の問題へ</button>
+            </div>
+        </main>
+
+        <!-- Result Screen -->
+        <main id="result-screen" class="screen hidden">
+            <div class="result-card">
+                <h2>結果発表</h2>
+                <div class="score-display">
+                    <span id="final-score">0</span> / <span id="total-questions">0</span>
+                </div>
+                <p id="result-message">お疲れ様でした！</p>
+                <div class="result-actions">
+                    <button id="retry-btn" class="primary-btn">同じパートを解き直す</button>
+                    <button id="menu-btn" class="secondary-btn">メニューに戻る</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 古典テスト対策アプリ</p>
+        </footer>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
