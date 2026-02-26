@@ -53,7 +53,12 @@ function init() {
 function loadProgress() {
     const saved = localStorage.getItem('classical_quiz_progress');
     if (saved) {
-        userProgress = JSON.parse(saved);
+        try {
+            userProgress = JSON.parse(saved);
+        } catch (e) {
+            console.warn('進捗データの読み込みに失敗しました。リセットします。', e);
+            userProgress = {};
+        }
     }
 }
 
