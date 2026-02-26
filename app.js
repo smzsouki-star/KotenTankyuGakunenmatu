@@ -274,7 +274,7 @@ function showResult() {
     } else if (percentage >= 60) {
         resultMessage.textContent = 'ギリギリだな。運が良かっただけだ。おまえは今までに間違えた古典の数を覚えているのか？ 中途半端な知識なんて、ゴミ以下だッ！';
     } else if (percentage >= 40) {
-        resultMessage.textContent = 'きさまッ！ 冗談で言っているのかッ！？ おまえの頭の中は『お花畑』なのか？ 教科書を読み直す勇気も、理解する知能も、今のきさまには『無い』ッ！';
+        resultMessage.textContent = 'きさまッ！ 冗談で言っているのかッ！？ おまえの頭の中は『お花畑』なのか？ 教科書を読み直す勇気も、理解する知能も、今のきさまには『無い』ッ！マンモーニなんだよッ！';
     } else {
         resultMessage.textContent = '便器に吐き出されたタンカスどもがッ！おまえはもはや古典どころか、日本語を喋る資格すら無い。この『便所掃除のメシ』以下のクズめ！';
     }
