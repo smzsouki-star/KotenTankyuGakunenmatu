@@ -275,9 +275,9 @@ function showResult() {
     if (percentage === 100) {
         resultMessage.textContent = '最高に『ハイ！』ってやつだアアアアア！全問正解...だが、この問題だけで勝った気になるなよ？ 無駄無駄無駄無駄ァ！';
     } else if (percentage >= 80) {
-        resultMessage.textContent = 'あ、一応合格点？ 詰めが甘いんだよ。その数問のミスがッ！ 命取りになるってことがッ！ ッ理解ッできていないのかッ！ このド低脳がァーーッ！';
+        resultMessage.textContent = 'あ、一応合格点？ 詰めが甘いんだよ。その数問のミスがッ！ 命取りになるってことがッ！ ッ理解ッできていないのかッ！ この腐れ脳みそがァーーッ！';
     } else if (percentage >= 60) {
-        resultMessage.textContent = 'ギリギリだな。運が良かっただけだ。おまえは今までに間違えた古典の数を覚えているのか？ 中途半端な知識なんて、ゴミ以下だッ！';
+        resultMessage.textContent = 'ギリギリだな。運が良かっただけだ。おまえは今までに間違えた古典の数を覚えているのか？ 中途半端な知識なんて、貧弱貧弱ゥ！';
     } else if (percentage >= 40) {
         resultMessage.textContent = 'きさまッ！ 冗談で言っているのかッ！？ おまえの頭の中は『お花畑』なのか？ 教科書を読み直す勇気も、理解する知能も、今のきさまには『無い』ッ！マンモーニなんだよッ！';
     } else {
